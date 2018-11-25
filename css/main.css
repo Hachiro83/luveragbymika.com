@@ -188,16 +188,29 @@ h3{
 
 
 /**Header**/
+.parallax {
+    /* The image used */
+    background-image: url('../img/photo01.jpg');
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 @media only screen and (min-width: 480px){
     div.hero{
-        background-image: url('../img/photo01.jpg');
         height: 50%;
         background-position: top center;
         background-size: auto;
         background-repeat: no-repeat;
         opacity: 1;
-    }  
+    }
 }
 
 @media only screen and (min-width: 768px){
@@ -491,6 +504,19 @@ article img{
 article p {
 	line-height: 2;
 	text-align: justify;
+}
+
+div #article_3 p a{
+    line-height: 2;
+    text-decoration: none;
+    float: right;
+    display: inline;    
+
+}
+
+article p a i{
+    font-size: 1.5em;
+
 }
 
 aside{

@@ -29,7 +29,7 @@ if(maintenance==1){
  } 
 
  today = dd + '-' + mm + '-' + yyyy;
- for (let el of document.querySelectorAll('.fecha')) el.innerHTML = "<i class='fa fa-calendar' aria-hidden='true'></i> " + today;         
+ for (let el of document.querySelectorAll('.fecha')) el.innerHTML = "<i class=\"far fa-calendar-alt\"></i> " + today;         
 
 /////////////////////////////////////////////////////////
 //Update hora
@@ -51,7 +51,7 @@ if(maintenance==1){
    m = checkTime(m);
    s = checkTime(s);
    //document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
- for (let el of document.querySelectorAll('.hora')) el.innerHTML = "<i class='fa fa-clock-o' aria-hidden='true'></i> " + h + ":" + m + ":" + s;   
+ for (let el of document.querySelectorAll('.hora')) el.innerHTML = "<i class=\"far fa-clock\"></i> " + h + ":" + m + ":" + s;   
    t = setTimeout(function() {
      startTime()
    }, 500);
