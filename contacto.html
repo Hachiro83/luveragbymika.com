@@ -104,43 +104,32 @@
             <div class="contenido contenedor">
                 
                 <main class="contenido-principal">
-                    <article>
-                        <h2 id="simbolo">el sello “Plata .925”</h2>
-                        <img src="img/photo02.jpg">
-                        <p>La plata en su estado natural es muy maleable (blanda) por lo tanto los artesanos no pueden trabajar con ella y al lucirla se deformaría.  Para ello hay que mezclarla con otros metales y darle una mayor resistencia. La “ley” es la proporción en peso en que el metal precioso puro entra en una aleación con otros metales. La pureza de la plata se mide en milésimas; así 1000 milésimas equivale a una pieza de plata 100 % pura.</p>
-                        <a id = "boton_article_1" class="boton" onClick="show_articel_1()">Leer mas...</a>
-                        <div id = "article_1" name = "article_1" style="display: none;">                            
-                            <br>
-                            <p>En el mercado se utilizan las siguientes leyes: 950, 925, 900 y 800.<br><br>Y de ahí sale el famoso 925 mm. En la mayoría de los casos y en Cachitos de Plata también, la joyería en plata está hecha con plata de ley 925 porque, como he explicado en el párrafo anterior, la plata que se utiliza está mezclada con otro metal. El más utilizado es el cobre; es decir, 92.5 % de plata pura y un 7.5 % de cobre.</p>
-                            <a id = "boton_article_1" class="boton" onClick="hide_articel_1()">Regresar</a>                              
-                        </div>
-                    </article>
-                    <article>
-                        <h2 id="simbolo">Quienes Somos...</h2>
-                        <img src="img/photo03.jpg">
-                        <p>Somos distribuidores exclusivos en México del fabricante; son accesorios para mujer, de plata .925 garantizada, con bellos y diferentes diseños, a precios muy accesibles y justos.<br>Trabajamos bajo los valores de honestidad, responsabilidad, gratitud y sensibilidad hacia nuestros clientes, así como a las personas asociadas que ya distribuyen nuestras bellezas de plata.</p>
-                        <a id = "boton_article_2" class="boton" onClick="show_articel_2()">Leer mas...</a>
-                        <div id = "article_2" name = "article_2" style="display: none;">                            
-                            <br>
-                            <p>Con una amplia experiencia y capacitación en Ventas, Luz Vera inicia esta propuesta, LuVerAg•byMIKA• con la firme convicción de crear una fuente generadora de ingresos diferente a las opciones actuales en el mercado. Concebida como una opción accesible tanto para nuestro equipo de plata como para nuestros clientes, inicia actividades a través de nuestras redes sociales (<a href="https://www.facebook.com/luzveraplata/" target="_blank" >Facebook</a>, <a href="https://www.instagram.com/luverag/" target="_blank" >Instagram</a>) donde orgullosamente hoy en día contamos con numerosos clientes satisfechos, así como con un gran equipo de plata que ayuda a la distribución y venta de nuestros productos.</p>
-                            <a id = "boton_article_2" class="boton" onClick="hide_articel_2()">Regresar</a>                              
-                        </div>
-                    </article>
-                    <article>
-                        <h2>Nuestros Distribuidores</h2>
-                        <img src="img/photo04.jpg">
-                        <p>Tenemos distribuidores en varias plazas dentro de la Republica Mexicana y el centro del país.</p>
-                        <br>
-                        <p>Sí Deseas ser uno de nuestros Socios Es muy fácil: Nos escribes por esta vía (dar click en en el botón “Contactar”) y en breve te estaremos contactando para hacer una cita.</p>
-                        <a id = "boton_article_3" class="boton" onClick="show_articel_3()">Contactar</a>
-                        <div id = "article_3" name = "article_3" style="display: none;">                            
-                            <!-- <p><span>Lu VerAg</span> by <span>Mika</span><br></p> -->
-                            <p><a class="boton clearfix" href="https://wa.me/5215530240198" target="_blank"><i class="fab fa-whatsapp-square"></i>&nbsp;&nbsp;5530240198</p></a><br><br>
-                        	<p><a class="boton clearfix" href="http://m.me/luzveraplata" target="_blank"><i class="fab fa-facebook-messenger"></i>&nbsp;&nbsp;LU VERAG •by MIKA•</p></a><br><br>
-                            <p><a class="boton clearfix" href="mailto:ventas@luveragbymika.com"><i class="fas fa-envelope"></i>&nbsp;&nbsp;Ventas LuVerAg</a></p><br><br>                               
-                            <a id = "boton_article_3" class="boton" onClick="hide_articel_3()">Regresar</a>                              
-                        </div>                        
-                    </article>                                
+                    <div class="medios">
+                        <p><a href="https://wa.me/5215530240198" target="_blank"><i class="fab fa-whatsapp-square"></i></a></p>
+                        <p><a href="http://m.me/luzveraplata" target="_blank"><i class="fab fa-facebook-messenger"></i></a></p>
+                        <p><a href="mailto:ventas@luveragbymika.com"><i class="fas fa-envelope"></i></a></p>
+                    </div>
+                    <div class="formulario">                        
+                        <form id="contact" action="./php/send.php" method="post">
+                            <h3>Contacto Rápido</h3>
+                            <h4>¡Contáctanos hoy y obtén respuesta en las próximas 24 horas!</h4>
+                            <fieldset>
+                                <input id="name" name="name" placeholder="Tú Nombre" type="text" tabindex="1" required autofocus>
+                            </fieldset>
+                            <fieldset>
+                                <input id="email" name="email" placeholder="Tú Correo Electrónico" type="email" tabindex="2" required>
+                            </fieldset>
+                            <fieldset>
+                                <input id="phone" name="phone" placeholder="Tú Número Telefónico" type="tel" tabindex="3" required>
+                            </fieldset>
+                            <fieldset>
+                                <textarea id="message" name="message" placeholder="Déjanos tú mensaje aquí..." tabindex="5" required></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <button class="boton" name="submit" type="submit" id="contact-submit" data-submit="...Enviando">Enviar</button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </main><!-- contenido-principal -->
                 
                 <aside class="sidebar">
